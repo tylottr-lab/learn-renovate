@@ -20,3 +20,5 @@ jobs:
           RENOVATE_GIT_AUTHOR: "Renovate Bot <bot@renovateapp.com>"
           RENOVATE_AUTODISCOVER: "false"
           RENOVATE_ONBOARDING: "true"
+          RENOVATE_REPOSITORIES: tylottr-lab/learn-renovate
+           
