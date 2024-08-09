@@ -1,0 +1,21 @@
+name: renovate
+
+on:
+  workflow_dispatch:
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      actions: write
+    steps:
+      - uses: renovatebot/github-action@v36.0.0
+        with: {}
+        env:
+          RENOVATE_PLATFORM: github
+          RENOVATE_GIT_AUTHOR: "Renovate Bot <bot@renovateapp.com>"
+          RENOVATE_AUTODISCOVER: "false"
+          RENOVATE_ONBOARDING: "true"
